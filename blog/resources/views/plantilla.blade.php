@@ -12,8 +12,13 @@
   </head>
   <body>
     <div class="container">
-      
+      <a href="{{route('foto')}}" class="btn btn-primary">Fotos</a><a href="{{route('nosotro')}}" class="btn btn-primary">Nosotros</a>
     </div>
+    <div class="container">
+      @yield('seccion')
+    </div>
+
+    <div class="container bg-dark text-white text-center">footer</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

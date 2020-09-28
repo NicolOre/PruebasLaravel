@@ -18,5 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('fotos', function(){
-	return 'hoad';
-});
+	return view('fotos');
+})->name('foto');
+
+Route::get('nosotros', function(){
+	$equipo = ['Luis','Nicol','Rodrigo'];
+	return view('nosotros',['equipo'=>$equipo]);
+})->name('nosotro');
